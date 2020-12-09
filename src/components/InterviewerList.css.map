@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGG,AAAD,qBAAS,CAAC;EACR,KAAK,ECCD,IAAI;EDAR,aAAa,EAAE,MAAM;CACtB;;AAEA,AAAD,mBAAO,CAAC;EACN,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,QAAQ;CACpB",
+    "sources": [
+        "InterviewerList.scss",
+        "../styles/variables.scss"
+    ],
+    "names": [],
+    "file": "InterviewerList.css"
+}
