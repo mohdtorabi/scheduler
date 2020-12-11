@@ -1,12 +1,44 @@
-export function getAppointmentsForDay(state, day) {
-  let arr = [];
+const getAppointmentsForDay = function (state, day) {
+    const dayobj = state.days.find(d => {
+      return d.name === day
+    });
+    if (dayobj === undefined) {
+      return []
+    }
+    const appointments = dayobj.appointments.map(id => {
+      return state.appointments[id]
+    })
 
-    for (const item of state.days) {
-       if (item.name === day) {
-        for (const elem of item.appointments) {
-          arr.push(state.appointments[elem])
+    return appointments;
+}
+
+const getInterviewersForDay = function (state, dayOfweek) {
+  const arr = [];
+  for (const day of state.days) {
+    if (day.name === dayOfweek){
+      for (const elem of day.appointments) {
+        if (state.appointments[elem].interview !== null) {
+          const interviewerId = state.appointments[elem].interview.interviewer
+          arr.push(state.interviewers[interviewerId])
         }
       }
     }
-    return arr;
+  }
+  return arr;
 }
+
+
+
+const getInterview = function (state, interview) {
+  if (interview !== null) {
+    return {
+      student: interview.student,
+      interviewer: state.interviewers[interview.interviewer]
+    }
+  }
+  return null;
+}
+
+
+
+module.exports = {getAppointmentsForDay, getInterviewersForDay, getInterview}
