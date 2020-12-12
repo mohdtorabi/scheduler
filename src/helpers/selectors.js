@@ -16,11 +16,11 @@ const getInterviewersForDay = function (state, dayOfweek) {
   const arr = [];
   for (const day of state.days) {
     if (day.name === dayOfweek){
-      for (const elem of day.appointments) {
-        if (state.appointments[elem].interview !== null) {
-          const interviewerId = state.appointments[elem].interview.interviewer
-          arr.push(state.interviewers[interviewerId])
-        }
+      for (const elem of day.interviewers) {
+       /*  if (state.appointments[elem].interview !== null) {
+          const interviewerId = state.appointments[elem].interview.interviewer */
+          arr.push(state.interviewers[elem])
+        
       }
     }
   }
@@ -38,6 +38,8 @@ const getInterview = function (state, interview) {
   }
   return null;
 }
+
+
 
 
 
