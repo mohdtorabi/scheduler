@@ -17,9 +17,8 @@ const getInterviewersForDay = function (state, dayOfweek) {
   for (const day of state.days) {
     if (day.name === dayOfweek){
       for (const elem of day.interviewers) {
-       /*  if (state.appointments[elem].interview !== null) {
-          const interviewerId = state.appointments[elem].interview.interviewer */
           arr.push(state.interviewers[elem])
+        
         
       }
     }
