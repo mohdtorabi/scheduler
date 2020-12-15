@@ -17,13 +17,13 @@ export default function Form(props) {
   } 
   const [error, setError] = useState("");
   const saving = () => {
-    setName(name)
-    setInterviewer(interviewer)
+    
     
     if (name === "") {
       setError("Student name cannot be blank");
       return;
     }
+    setError("");
     props.onSave(name, interviewer)
   }
   return (
