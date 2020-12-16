@@ -58,8 +58,8 @@ export default function reducer(state, action) {
     const days = showDaysWithSpots(state.days, appointments);
     return {
       ...state,
-      appointments: appointments,
-      days: days,
+      appointments,
+      days,
     };
   }
 

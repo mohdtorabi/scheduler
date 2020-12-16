@@ -43,7 +43,7 @@ export default function Application(props) {
 
   return (
     <main className="layout">
-      <section className="sidebar">
+      <section className="sidebar" data-testid="appointments">
         <img
           className="sidebar--centered"
           src="images/logo.png"

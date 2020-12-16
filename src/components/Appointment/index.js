@@ -53,7 +53,7 @@ export default function Appointment (props) {
   }
     
         return (
-          <article className="appointment">
+          <article className="appointment" data-testid="appointment">
             <Header time = {props.time}/>
             {mode === EMPTY && <Empty onAdd={() => transition(CREATE)} />}
             {mode === CREATE && (
@@ -102,13 +102,13 @@ export default function Appointment (props) {
             )}
             {mode === ERROR_SAVE && (
             <Error
-              message= "Saving"
+              message= "could not save"
               onClose={back}
             />
             )}
             {mode === ERROR_DELETE && (
             <Error
-              message= "Deleting"
+              message= "Are you serious?!"
               onClose={back}
             />
             )}
