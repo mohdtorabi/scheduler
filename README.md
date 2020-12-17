@@ -18,6 +18,10 @@ A React application which allows users to book and cancel interviews
 
 Install dependencies with `npm install`.
 
+## Browsing the App
+
+Visit : https://5fdacda092110a000803d630--peaceful-kalam-32bb12.netlify.app/
+
 ## Running Webpack Development Server
 
 ```sh
