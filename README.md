@@ -45,7 +45,7 @@ Storybook, Webpack Dev Server, Jest, Testing Library, Cypress
 Install dependencies with `npm install`.
 
 ## Browsing the App
-
+//not working trying to fix it tmrw
 Visit : https://5fdade2bbfe9ed47066a5ec4--confident-gates-20c01b.netlify.app/
 
 ## Running Webpack Development Server
