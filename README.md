@@ -2,7 +2,7 @@
 
 Interview Scheduler is a React app that allows to add, delete, edit, and cancel an appointment along with choosing the interviewer available for that day
 
-# Technical Specifications
+## Technical Specifications
   -React
   -Webpack, Babel
   -Axios
