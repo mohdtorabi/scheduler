@@ -23,7 +23,7 @@ Install dependencies with `npm install`.
 
 ## Browsing the App
 
-Visit : https://5fdacda092110a000803d630--peaceful-kalam-32bb12.netlify.app/
+Visit : https://5fdade2bbfe9ed47066a5ec4--confident-gates-20c01b.netlify.app/
 
 ## Running Webpack Development Server
 
