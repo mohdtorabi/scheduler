@@ -1,12 +1,15 @@
 # Interview Scheduler
-A React application which allows users to book and cancel interviews 
+
+Interview Scheduler is a React app that allows to add, delete, edit, and cancel an appointment along with choosing the interviewer available for that day
 
 # Technical Specifications
-  React
-  Webpack, Babel
-  Axios, WebSockets
-  Axios
-  Storybook, Webpack Dev Server, Jest, Testing Library
+  -React
+  -Webpack, Babel
+  -Axios
+  -Storybook
+  -Webpack Dev Server
+  -Jest
+  -Cypress
   
 ## Screenshots
 ![](https://github.com/mohdtorabi/scheduler/blob/master/image/Screen%20Shot%202020-12-16%20at%207.53.33%20PM.png)
